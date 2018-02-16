@@ -1,27 +1,44 @@
-# Angular
+[Angular 5 by Root]
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
-## Development server
+# Guía por Root-C
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- 'src/index.html' 			: Página raíz que contiente al componente raíz <app-root>
+- 'src/main.ts'				: Fichero de arranque de la aplicación que configura y carga el modulo principal.
+- 'src/app/app.module.ts'	: Declaración de módulo raíz y sus dependencias.
+- 'src/app/app.component.ts': Componente raíz 'app-root'.
+- 'src/app/app-routing.component.ts' : Definir rutas
+- 'src/app/index.ts'		: Fichero indice de una carpeta para facilitar importación
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+# Cli
+- 'angular-cli-json': Configuración del CLI
+- 'package.json' 	: Dependencias y scripts
+- 'tslint.json' 	: Reglas para código limpio
+- '.editorconfig' 	: Configuración para el editor
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+DOCUMENTACIÓN DEL ESQUELETO:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Creado 23/01/2018
+- Angular Versión 5.2.0
+- Tipo, Modular con contenedores.
 
-## Running end-to-end tests
+Resumen: 
+- Ésta arquitectura está basada en modulos pre-registrados, se utilizó angular cli, puedes reutilizar los módulos renombrándolos pero tienes que tener en cuenta algunas características.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+El módulo articles es un módulo de testing o pruebas (starter), puedes guiarte de él para configurar los demás módulos.
 
-## Further help
+Una vez copiado el módulo, genera tus rutas normalmente.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Pasos obligatorios para el funcionamiento correcto de un nuevo modulo agregado:
+	- En el archivo app.module.ts referenciar, registrar el módulo.
+
+
+Tareas de arquitectura:
+	- Mostrar correctamente el login (nombre de usuario y demás)
+	- Completar el crud de usuario
+	- Verificar Tokenización (lista negra con fs)
+	- Cerrar sesión (token black list)
+	- Guards
