@@ -1,0 +1,14 @@
+ng g module new-module to create a new module
+
+call ng g component new-module/new-component
+
+Configurations:
+
+1.- Create and configure Routes for components
+2.- Instantiate Route file on module, instantiate RouterModule module too
+
+1.- Crear y configurar las rutas (despues de haber creado los componentes)
+2.- Instanciar el archivo de rutas configurado anteriormente.
+3.- Crear archivo index.ts
+4.- En app.module registrar el nuevo modulo creado
+5.- En app routes configurar la ruta y sus child
